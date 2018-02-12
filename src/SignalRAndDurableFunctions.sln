@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27323.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightSearchWeb", "FlightSearchWeb\FlightSearchWeb.csproj", "{2422E6BB-85DD-4F94-B829-E5C2C5ADF207}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightSearchFunction", "SignalRAndDurableFunctions\FlightSearchFunction.csproj", "{DEC1F3B7-9C73-488B-90C3-5DEE49F1A2FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2422E6BB-85DD-4F94-B829-E5C2C5ADF207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2422E6BB-85DD-4F94-B829-E5C2C5ADF207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2422E6BB-85DD-4F94-B829-E5C2C5ADF207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2422E6BB-85DD-4F94-B829-E5C2C5ADF207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEC1F3B7-9C73-488B-90C3-5DEE49F1A2FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEC1F3B7-9C73-488B-90C3-5DEE49F1A2FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEC1F3B7-9C73-488B-90C3-5DEE49F1A2FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEC1F3B7-9C73-488B-90C3-5DEE49F1A2FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D3AB49F-B1DB-4466-B0E7-AA83931A8427}
+	EndGlobalSection
+EndGlobal

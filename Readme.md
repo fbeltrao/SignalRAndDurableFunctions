@@ -11,7 +11,7 @@ SignalR for .NET Core is in preview at the moment. It allows a server to client 
 
 ## The Sample application
 
-[Application Diagram](Diagram.png)
+![Application Diagram](media/Diagram.png)
 
 Users connect to FlightSearchWeb application, on {url}/flights opening a SignalR connection to receive broadcasts (what people are searching) and their own search results. A search result is submitted to FlightSearchWeb/flightData/search which makes the call to the Durable Azure Function.
 

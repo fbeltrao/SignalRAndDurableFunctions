@@ -1,0 +1,56 @@
+<h2>Flight search</h2>
+<form>
+    <div class="form-group">
+        <label for="origin">Origin</label>
+        <input type="text" name="origin" [(ngModel)]="origin" class="form-control" id="origin" placeholder="Origin">
+    </div>
+    <div class="form-group">
+        <label for="destination">Destination</label>
+        <input type="text" name="destination" [(ngModel)]="destination" class="form-control" id="destination" placeholder="Destination">
+    </div>
+    <div class="form-group">
+        <label for="startDate">Start date</label>
+        <input type="date" name="startDate" class="form-control" [(ngModel)]="startDate" id="startDate" placeholder="Start date">
+    </div>
+
+    <button type="submit" class="btn btn-default" [class.disabled]="isSearching" (click)="search()">Search</button>
+</form>
+
+<div class="container" *ngIf="searchResult">
+    <h4>Search result completed in {{ searchResult.searchTime }} milliseconds</h4>
+    <ul class="search-result">
+        <li *ngFor="let flight of searchResult.flights">
+            <span class="date">{{ flight.date | date:'shortTime' }}</span>
+            <span class="price">{{ flight.price | currency }}</span>
+        </li>
+    </ul>
+
+    <h4>Recommended Hotels</h4>
+    <ul class="search-result">
+        <li *ngFor="let hotel of searchResult.hotels">
+            <span class="name">{{ hotel.name }}</span>
+            <span class="price">{{ hotel.price | currency }}</span>
+        </li>
+    </ul>
+
+    <div *ngIf="searchResult.tickets.length > 0">
+        <h4>Interesting events</h4>
+        <ul class="search-result">
+            <li *ngFor="let ticket of searchResult.tickets">
+                <span class="name">{{ ticket.name }}</span>
+                <span class="price">{{ ticket.price | currency }}</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="container" *ngIf="broadcastMessages.length > 0">
+    <h4>Broadcasts</h4>
+    <ul>
+        <li *ngFor="let broadcast of broadcastMessages">
+            {{ broadcast }}
+        </li>
+    </ul>
+</div>
